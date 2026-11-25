@@ -58,6 +58,10 @@
   "Trähantverk",
   "Massivt trä",
   "Traditionella snickeritekniker"
+ ],
+ "sameAs": [
+  "https://www.facebook.com/newman.snickeri",
+  "https://www.instagram.com/newmansnickeriochtrahantverk/"
  ]
 }
 </script>
@@ -127,6 +131,10 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
 .sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .foot { padding-top: 0; padding-bottom: 48px; font-size: 14px; line-height: 1.7; letter-spacing: 0.14em; color: var(--muted); text-align: center; }
+.social { display: flex; justify-content: center; gap: 4px; margin-bottom: 12px; }
+.social a { width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--muted); }
+.social a:hover { color: var(--ink); background: rgba(20, 20, 20, 0.08); }
+.social svg { width: 20px; height: 20px; }
 @media (max-width: 400px) { .foot { letter-spacing: 0.06em; } }
 @media (max-width: 600px) {
   .hero { padding-top: 40px; display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 20px; row-gap: 36px; }
@@ -177,6 +185,10 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
   </section>
 </main>
 <footer class="wrap foot">
+  <nav class="social" aria-label="Sociala medier">
+    <a href="https://www.facebook.com/newman.snickeri" rel="me" aria-label="Newman Snickeri på Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="https://www.instagram.com/newmansnickeriochtrahantverk/" rel="me" aria-label="Newman Snickeri på Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+  </nav>
   <div>Newman Snickeri och Trähantverk AB</div>
   <div>Hjältebyvägen 110, 471 72 Hjälteby</div>
   <div>Org.nr 559506-8916</div>
