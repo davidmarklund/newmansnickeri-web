@@ -128,6 +128,14 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
 
 .foot { padding-top: 0; padding-bottom: 48px; font-size: 14px; line-height: 1.7; letter-spacing: 0.14em; color: var(--muted); text-align: center; }
 @media (max-width: 400px) { .foot { letter-spacing: 0.06em; } }
+@media (max-width: 600px) {
+  .hero { padding-top: 40px; display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 20px; row-gap: 36px; }
+  .hero-row { display: contents; }
+  .hero-wordmark { grid-column: 1; grid-row: 1; }
+  .hero-nails { grid-column: 2; grid-row: 1; width: clamp(40px, 11vw, 64px); }
+  .hero-text { grid-column: 1 / -1; grid-row: 2; }
+  .hero-text h1 { font-size: min(26px, 7.4vw); letter-spacing: 0.08em; }
+}
 </style>
 </head>
 <body>
